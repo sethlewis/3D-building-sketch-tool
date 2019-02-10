@@ -19,6 +19,7 @@
     "typescript": "^3.3.3"
   },
   "dependencies": {
-    "@types/arcgis-js-api": "^4.10.0"
+    "@types/arcgis-js-api": "^4.10.0",
+    "eslint": "^5.13.0"
   }
 }
