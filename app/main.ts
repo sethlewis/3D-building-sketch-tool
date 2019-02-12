@@ -1,16 +1,16 @@
-import Map from "esri/Map";
 import SceneView from "esri/views/SceneView";
 import WebScene from "esri/WebScene";
-import GraphicsLayer from "./layer";
+import GraphicsLayer from "esri/layers/GraphicsLayer";
 
-const GraphicsLayer 
+const buildingSketches = new GraphicsLayer({});
+
 const webscene = new WebScene({
-    portalItem: {
-      id: "dc8c61ae930b4db78daf1fe083f1deff"
-    }
-  });
+  portalItem: {
+    id: "dc8c61ae930b4db78daf1fe083f1deff"
+  }
+});
 
 const view = new SceneView({
-    map: webscene,
-    container: "viewDiv"
+  map: webscene,
+  container: "viewDiv"
 });
