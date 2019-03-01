@@ -17,5 +17,10 @@ define(["require", "exports", "esri/views/SceneView", "esri/WebScene", "esri/lay
         map: webscene,
         container: "viewDiv"
     });
+    view.environment = {
+        lighting: {
+            directShadowsEnabled: true
+        }
+    };
 });
 //# sourceMappingURL=main.js.map

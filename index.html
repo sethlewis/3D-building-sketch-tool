@@ -35,14 +35,49 @@
 </head>
 
 <body class="calcite-maps calcite-nav-top">
-    <nav class="navbar calcite-navbar navbar-fixed-top calcite-text-light calcite-bg-dark">
-        <div class="calcite-title calcite-overflow-hidden">
+ <!-- Navbar -->
+
+  <nav class="navbar calcite-navbar navbar-fixed-top calcite-text-light calcite-bg-dark">
+    <!-- Menu -->
+    <div class="dropdown calcite-dropdown calcite-text-dark calcite-bg-light"
+      role="presentation">
+      <a class="dropdown-toggle" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        <div class="calcite-dropdown-toggle">
+          <span class="sr-only">Toggle dropdown menu</span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        </nav> <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your
-                    browser</a> to improve your experience.</p>
-            <![endif]-->
-<div id="viewDiv"></div>
+      </a>
+      <ul class="dropdown-menu">
+        <li class="active"><a class="hidden-md hidden-lg" href="#mapTab"
+            aria-controls="mapTab" role="tab" data-toggle="tab"> Map</a></li>
+        <li><a class="hidden-md hidden-lg" href="#sceneTab" aria-controls="sceneTab"
+            role="tab" data-toggle="tab"> Scene</a></li>
+        <li><a role="button" data-target="#panelBasemaps" aria-haspopup="true"><span
+              class="glyphicon glyphicon-th-large"></span> Basemaps</a></li>
+        <li><a role="button" data-target="#panelSettings" aria-haspopup="true"><span
+              class="glyphicon glyphicon-cog"></span> Settings</a></li>
+        <li><a role="button" id="calciteToggleNavbar" aria-haspopup="true"><span
+              class="glyphicon glyphicon-fullscreen"></span> Full Map</a></li>
+      </ul>
+    </div>
+    <!-- Title -->
+    <div class="calcite-title calcite-overflow-hidden">
+      <span class="calcite-title-main">Site Plan Sketch</span>
+      <span class="calcite-title-divider hidden-xs"></span>
+      <span class="calcite-title-sub hidden-xs">A 3D tool for sketching proposed developments in the browser</span>
+    </div>
+    <!-- Nav -->
+    <ul class="nav navbar-nav calcite-nav">
+     
+       
+    </ul>
+  </nav>
+  <!--/.calcite-navbar -->
+<div id="viewDiv" class="calcite-map calcite-map-absolute"></div>
 
     <script>
         require(["app/main"]);
